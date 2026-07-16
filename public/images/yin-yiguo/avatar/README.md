@@ -1,2 +1,2 @@
-Place the homepage avatar pair in `home/` and the overview-page avatar pair in `overview/`.
-In each folder, `1.jpg` is the default state and `2.jpg` is the hover state.
+Place homepage avatar images `1.jpg` through `6.jpg` in `home/` and the overview-page avatar pair in `overview/`.
+The homepage returns to `1.jpg` when the pointer leaves and advances through `2.jpg` to `6.jpg` on successive hovers; the overview page uses `1.jpg` as the default and `2.jpg` on hover.

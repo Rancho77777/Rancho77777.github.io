@@ -5,5 +5,14 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: {
+        home: 'index.html',
+        about: 'about/index.html',
+        info: 'info/index.html',
+        photos: 'photos/index.html',
+        motion: 'motion/index.html',
+      },
+    },
   },
 });
