@@ -28,5 +28,6 @@
 - 个人信息页档案图片放在 `public/images/<member-id>/credentials/`：现在固定为四类，依次是 1. 身份信息 2. 学籍信息 3. 工作信息 4. 社交媒体。每类图片按 `1-1`、`1-2`、`2-1`、`2-2` 这样的编号方式命名，并在 `src/data.js` 的对应分类 `images` 数组中控制顺序。
 - 照片墙图片放在 `public/images/<member-id>/photos/`：按 `src/data.js` 的 `media.photoFiles` 顺序显示。照片流为三行 justified gallery：每行从右向左循环，图片宽度随原始宽高比动态变化，行间距和卡片间距保持一致；鼠标悬停时暂停。
 - 当前站点不再显示语言切换按钮，页面固定为中文。
+- 访问量统计使用 Cloudflare Web Analytics：先在 Cloudflare Web Analytics 创建站点并复制 Token，再填入 `src/analytics.js` 的 `cloudflareAnalyticsToken`。统计脚本仅在正式域名加载，本地开发不会加载。
 
 当前主页为尹伊果个人站，直接访问 `/`、`/about/`、`/info/`、`/photos/`、`/motion/` 任一路由都可以访问对应静态页面。

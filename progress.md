@@ -30,3 +30,7 @@
 - Organized image assets for the single-person site: removed unused member folders and split Yin Yiguo's avatar assets into separate `home` and `overview` folders.
 - Fixed the avatar data paths and removed unused laboratory, research, and legacy member records from `src/data.js`.
 - Removed all English content and bilingual wrappers from `src/data.js`; the site data is now Chinese-only.
+
+## 2026-07-17
+
+- Added optional Cloudflare Web Analytics integration in `src/analytics.js`; the site owner must provide the Cloudflare-generated token to enable page-view and visitor statistics. The script is disabled on localhost and does not alter page appearance.

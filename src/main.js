@@ -1,7 +1,9 @@
 import './styles.css';
 import { members } from './data.js';
+import { initAnalytics } from './analytics.js';
 
 const app = document.querySelector('#app');
+initAnalytics();
 const person = members.find(item => item.id === 'yin-yiguo');
 const lang = 'zh';
 
